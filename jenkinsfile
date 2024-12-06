@@ -4,6 +4,8 @@ pipeline {
         DOCKER_IMAGE = 'python-app'
         AWS_REGION = 'us-east-1'
         INSTANCE_ID = '<AWS_INSTANCE_ID>'
+        AWS_ACCESS_KEY_ID = credentials(123717597129801)
+        AWS_SECRET_ACCESS_KEY = credentials(123717597129801)
     }
     stages {
         stage('Checkout') {
